@@ -179,11 +179,6 @@ class Tokens():
 
 
 
-
-
-
-
-
     def process_data(self):
         """
         function process_data
@@ -394,10 +389,6 @@ class Tokens():
 
 
 
-
-
-
-
     def csv_queued_tables(self):
         """
         csv_queued_tables
@@ -440,15 +431,6 @@ class Tokens():
             for l in lines:
                 f.write(l + "\n")
         
-            
-
-
-
-
-
-
-
-
 
 
 # =======================================================================================
