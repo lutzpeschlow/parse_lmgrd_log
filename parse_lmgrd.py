@@ -416,7 +416,6 @@ class Tokens():
         start_status = [obj.date_time, obj.total_lic]
         obj= self.check_list[len(self.check_list)-1]
         end_status = [obj.date_time, obj.total_lic]
-        print (start_status, end_status)
         # loop over all queued
         for i, obj in enumerate(self.queued):
             feat_dict = {}
@@ -426,8 +425,6 @@ class Tokens():
                 else:
                     feat_dict[feat] = count
             feat_list=list(feat_dict.items())
-            print (obj.date_time, obj.total_lic)
-            print (feat_list)
             lines.append("queued_"+str(i+1)+";"+str(obj.date_time)+";"+str(obj.total_lic))
             lines.extend(["",""])
             for items in feat_list:
