@@ -173,7 +173,7 @@ class Tokens():
         num_checks = len(self.check_list)
         num_starts = len(self.start_dates)
         self.log.append(str(len(line_list))+","+str(num_checks)+","+str(num_starts))
-        print("lines, checks, queued,starts: ", \
+        print("lines, checks, queued, starts: ", \
               str(len(line_list)), str(num_checks), str(len(self.queued)), str(num_starts))
         return num_checks, num_starts
 
@@ -235,6 +235,7 @@ class Tokens():
         minutes = 0.0
         t_minutes = 0.0
         d_tok_min = {}
+        day_counted = []
         # loop - token usage filled into post-dictionaries
         for i, obj in enumerate(self.check_list):
             if obj.in_out == "OUT:" and obj.duration > 0.0:
@@ -264,7 +265,7 @@ class Tokens():
                     # reset loop variables
                     day += 1
                     prev_date = curr_date
-                    print ("counted: ", curr_date, prev_date, i)
+                    day_counted.append([curr_date, prev_date, i])
                 # add on feature-minutes
                 if obj.feature in self.feature_minutes:
                     self.feature_minutes[obj.feature] += minutes
@@ -276,7 +277,9 @@ class Tokens():
                 else:
                     self.token_minutes[(obj.feature, obj.lic)] = t_minutes
             # if block
-        # loop
+        # loop   
+        # 12.2.-6.12.
+        print ("day counter stats: ", day_counted[0][0], day_counted[len(day_counted)-1][1])
         # return value
         return 0
 
@@ -522,7 +525,7 @@ def main():
     try:
         log_file = sys.argv[1]
     except:
-        log_file = "lmgrd_45_r001.log"
+        log_file = "lmgrd_27.log"
     # (0) instance of object
     t = Tokens(log_file)
     # (1) read and process data
@@ -542,12 +545,4 @@ def main():
 if __name__ == "__main__":
     main()   
    
-# =======================================================================================    
-# 
-# 13:23:41 (MSC) IN: "MSCONE" msiwani@SPA06CMW000201  [MSCONE:MSC_Apex_Modeler] (15 licenses)
-# 13:37:20 (MSC) OUT: "MSCONE" jfedewa@spa06cdw000073  [MSCONE:PA_ANALYSIS_MANAGER] (2 licenses)
-# 13:37:20 (MSC) Acquired 2 licenses for Group MSCONE (MSC Analysis Manager)
-# 13:37:21 (MSC) IN: "MSCONE" jfedewa@spa06cdw000073  [MSCONE:PA_ANALYSIS_MANAGER] (2 licenses)
-# 13:37:21 (MSC) Returned 2 licenses for Group MSCONE (MSC Analysis Manager)
-# 13:37:50 (MSC) OUT: "MSCONE" jfedewa@spa06cdl000002  [MSCONE:NASTRAN] (13 licenses)
-# 13:37:50 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran)    
+# =======================================================================================
