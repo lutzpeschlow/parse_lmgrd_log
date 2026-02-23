@@ -1,4 +1,4 @@
-import os, sys, string, re, csv
+import os, sys, string, re, csv, argparse
 from datetime import datetime, timedelta, time
 from typing import List
 from collections import defaultdict
@@ -57,14 +57,15 @@ class Tokens():
     - separate start dates as storage of deamon start times
       
     """
-    def __init__(self, lmgrd_file):
+    def __init__(self, lmgrd_file, csv_dot):
         """
         init
         
         initialize class and define attributes and methods
         """
-        # lmgrd log file
+        # lmgrd log file and dot option
         self.lmgrd_file = lmgrd_file
+        self.csv_dot = csv_dot
         # saved input date
         self.check_list = []
         self.start_dates = []
@@ -277,9 +278,9 @@ class Tokens():
                 else:
                     self.token_minutes[(obj.feature, obj.lic)] = t_minutes
             # if block
-        # loop   
-        # 12.2.-6.12.
-        print ("day counter stats: ", day_counted[0][0], day_counted[len(day_counted)-1][1])
+        # loop
+        if len(day_counted)>0:
+            print ("day counter stats: ", day_counted[0][0], day_counted[len(day_counted)-1][1])
         # return value
         return 0
 
@@ -298,8 +299,9 @@ class Tokens():
         Format: "2026-02-13 14:30:25";5
         """
         filename = "license_timeline.csv"
+        delimiter = ',' if self.csv_dot else ';'
         with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
-            writer = csv.writer(csvfile, delimiter=';')
+            writer = csv.writer(csvfile, delimiter=delimiter)
             writer.writerow(['time', 'lic'])            
             for obj in self.check_list:
                 if hasattr(obj, 'total_lic') and obj.total_lic is not None:
@@ -318,6 +320,8 @@ class Tokens():
         feature_min_perc = []
         feat_tok_min_perc = []
         csv_01 = "feature_and_token_minutes.csv"
+        delimiter = ',' if self.csv_dot else ';'
+        decimal = "," if not self.csv_dot else "." 
         # pct prep
         for f, m in self.feature_minutes.items():
             pct = (m / self.total_duration) * 100.0
@@ -327,21 +331,22 @@ class Tokens():
             pct = (m / self.total_tok_min) * 100.0
             feat_tok_min_perc.append([f,m,pct])
         # write csv file - 01
-        with open(csv_01, 'w', encoding='utf-8') as f:
+        with open(csv_01, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f, delimiter=delimiter)
             # feature minutes
-            f.write("feature;feat_min;percentage\n")  
+            writer.writerow(["feature", "feat_min", "percentage"])
             for data in feature_min_perc:
-                wert_min = f"{data[1]:.2f}".replace(".", ",")
-                wert_pct = f"{data[2]:.1f}%".replace(".", ",")
-                f.write(f"{data[0]};{wert_min};{wert_pct}\n")
+                wert_min = f"{data[1]:.2f}".replace(".", decimal)
+                wert_pct = f"{data[2]:.1f}%".replace(".", decimal)
+                writer.writerow([data[0], wert_min, wert_pct])
             # separator
-            f.write(" \n")
+            writer.writerow([])
             # feature token-minutes
-            f.write("feature;token_min;percentage\n")  
+            writer.writerow(["feature", "token_min", "percentage"])
             for data in feat_tok_min_perc:
-                wert_min = f"{data[1]:.2f}".replace(".", ",")
-                wert_pct = f"{data[2]:.1f}%".replace(".", ",")
-                f.write(f"{data[0]};{wert_min};{wert_pct}\n")
+                wert_min = f"{data[1]:.2f}".replace(".", decimal)
+                wert_pct = f"{data[2]:.1f}%".replace(".", decimal)
+                writer.writerow([data[0], wert_min, wert_pct])
         # return value
         return 0
 
@@ -362,33 +367,40 @@ class Tokens():
         line_02 = ""
         t_values = []
         sum_tok_min = 0.0
+        delimiter = ',' if self.csv_dot else ';'
+        decimal = "," if not self.csv_dot else "."  
+        # check number of days
+        if len(self.per_day_tok_min)==0:
+            print ("only intraday data, no daily stats ...")
+            return 1
         # write csv file - 01
         with open(csv_01, 'w', encoding='utf-8') as f:
             for k,v in self.per_day_tok_min.items():
-                line_01 = ""
-                line_02 = ""
-                for k1,v1 in v.items():
-                    line_01 = line_01 + str(k1) + ";" 
-                    v1_str = f"{v1:.1f}".replace(".", ",")
-                    line_02 = line_02 + v1_str  + ";"
-                    sum_tok_min = sum_tok_min + v1
-                sum_str = f"{sum_tok_min:.1f}".replace(".", ",")
-                line_01 = str(k) + ";" + line_01 + "\n"
-                line_02 = str(sum_str) + ";" + line_02 + "\n"
-                f.write(line_01) 
-                f.write(line_02)
-                sum_tok_min = 0.0
-        # write csv file - 02
+               line_01 = ""
+               line_02 = ""
+               for k1,v1 in v.items():
+                   line_01 = line_01 + str(k1) + delimiter 
+                   v1_str = f"{v1:.1f}".replace(".", decimal)
+                   line_02 = line_02 + v1_str  + delimiter
+                   sum_tok_min = sum_tok_min + v1
+               sum_str = f"{sum_tok_min:.1f}".replace(".", decimal)
+               line_01 = str(k) + delimiter + line_01 + "\n"
+               line_02 = str(sum_str) + delimiter + line_02 + "\n"
+               f.write(line_01) 
+               f.write(line_02)
+               sum_tok_min = 0.0
+        # write csv file - 
         with open(csv_02, 'w', encoding='utf-8') as f:
-            header = "date;" + ";".join(map(str, self.all_features))
+            header = "date" + delimiter + delimiter.join(map(str, self.all_features))
             f.write(header + "\n")
             t_values = [0.0] * len(self.all_features)
             for d,d_data in self.per_day_tok_min.items():
-                # line_01 = str(d) + ";"
                 for feat,value in d_data.items():
                     t_values[self.all_features.index(feat)] = value
-                line_01 = str(d) + ";" + ";".join(f"{v:.2f}".replace(".", ",") for v in t_values)
+                line_01 = str(d) + delimiter + delimiter.join(f"{v:.2f}".replace(".", decimal) for v in t_values)
                 f.write(line_01 + "\n")
+        return 1
+        
 
 
 
@@ -405,6 +417,7 @@ class Tokens():
         start_status = []
         end_status = []
         lines = []
+        delimiter = ',' if self.csv_dot else ';'
         # get start and end time
         obj = self.check_list[0]
         start_status = [obj.date_time, obj.total_lic]
@@ -419,17 +432,17 @@ class Tokens():
                 else:
                     feat_dict[feat] = count
             feat_list=list(feat_dict.items())
-            lines.append("queued_"+str(i+1)+";"+str(obj.date_time)+";"+str(obj.total_lic))
+            lines.append("queued_"+str(i+1)+delimiter+str(obj.date_time)+delimiter+str(obj.total_lic))
             lines.extend(["",""])
             for items in feat_list:
-                lines[(i*3)+1] = lines[(i*3)+1] + str(items[0]) + ";"
-                lines[(i*3)+2] = lines[(i*3)+2] + str(items[1]) + ";"
+                lines[(i*3)+1] = lines[(i*3)+1] + str(items[0]) + delimiter
+                lines[(i*3)+2] = lines[(i*3)+2] + str(items[1]) + delimiter
         # csv
         with open(csv, 'w', encoding='utf-8') as f:
-            f.write(start_status[0]+";"+"start"+";"+str(start_status[1])+"\n")
+            f.write(start_status[0]+delimiter+"start"+delimiter+str(start_status[1])+"\n")
             for i, obj in enumerate(self.queued):
-                f.write(str(obj.date_time) + ";" + "queued_"+str(i+1)+";"+str(obj.total_lic)+"\n")
-            f.write(str(end_status[0])+";"+"end"+";"+str(end_status[1])+"\n")
+                f.write(str(obj.date_time) + delimiter + "queued_"+ str(i+1) + delimiter + str(obj.total_lic) +"\n")
+            f.write(str(end_status[0])+delimiter+"end"+delimiter+str(end_status[1])+"\n")
             f.write("; ; ;\n")
             for l in lines:
                 f.write(l + "\n")
@@ -512,6 +525,29 @@ class Tokens():
 
 
 
+def process_arguments(args_list):
+    """
+    process_arguments
+
+    get arguments from args_list (sys.argv)
+        --input=FILE.log 
+        --csv-dot (optional)
+
+    return:
+        input_file: str
+        csv_dot:    bool
+    """
+    parser = argparse.ArgumentParser(description="--input for log file, --csv-dot as CSV format")
+    parser.add_argument("--input", required=True, help="log file",type=str)
+    parser.add_argument("--csv-dot",action="store_true",help="CSV with comma and dot")
+    args = parser.parse_args(args_list[1:])  
+    if not os.path.exists(args.input):
+        parser.error(f"Input: '{args.input}' does not exist!")
+    print (args.input, args.csv_dot)
+    return args.input, args.csv_dot
+
+
+
 def main():
     """
     main function
@@ -522,12 +558,9 @@ def main():
     print (sys.version)
     print(os.getcwd())
     print(sys.argv)
-    try:
-        log_file = sys.argv[1]
-    except:
-        log_file = "lmgrd_27.log"
+    log_file, csv_dot = process_arguments(sys.argv)
     # (0) instance of object
-    t = Tokens(log_file)
+    t = Tokens(log_file, csv_dot)
     # (1) read and process data
     t.read_lmgrd_file()
     t.process_data()
@@ -546,3 +579,5 @@ if __name__ == "__main__":
     main()   
    
 # =======================================================================================
+
+
