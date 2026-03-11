@@ -1,0 +1,694 @@
+16:11:46 (lmgrd) -----------------------------------------------
+16:11:46 (lmgrd)   Please Note:
+16:11:46 (lmgrd) 
+16:11:46 (lmgrd)   This log is intended for debug purposes only.
+16:11:46 (lmgrd)   In order to capture accurate license
+16:11:46 (lmgrd)   usage data into an organized repository,
+16:11:46 (lmgrd)   please enable report logging. Use Flexera's
+16:11:46 (lmgrd)   software license administration  solution,
+16:11:46 (lmgrd)   FlexNet Manager, to  readily gain visibility
+16:11:46 (lmgrd)   into license usage data and to create
+16:11:46 (lmgrd)   insightful reports on critical information like
+16:11:46 (lmgrd)   license availability and usage. FlexNet Manager
+16:11:46 (lmgrd)   can be fully automated to run these reports on
+16:11:46 (lmgrd)   schedule and can be used to track license
+16:11:46 (lmgrd)   servers and usage across a heterogeneous
+16:11:46 (lmgrd)   network of servers including Windows NT, Linux
+16:11:46 (lmgrd)   and UNIX.
+16:11:46 (lmgrd) 
+16:11:46 (lmgrd) -----------------------------------------------
+16:11:46 (lmgrd) 
+16:11:46 (lmgrd) 
+16:11:46 (lmgrd) Server's System Date and Time: Sun Mar 08 2026 16:11:46 Romance Standard Time
+16:11:46 (lmgrd) pid 31772
+16:11:46 (lmgrd) Changing message security level from -1 to 0
+16:11:46 (lmgrd) SLOG: Summary LOG statistics is enabled.
+16:11:46 (lmgrd) Done rereading
+16:11:46 (lmgrd) FlexNet Licensing (v11.19.6.0 build 293152 x64_n6) started on pc_muc1 (IBM PC) (3/8/2026)
+16:11:46 (lmgrd) Copyright (c) 1988-2024 Flexera. All Rights Reserved.
+16:11:46 (lmgrd) World Wide Web:  http://www.flexerasoftware.com
+16:11:46 (lmgrd) License file(s): C:\Program Files\MSC.Software\MSC Licensing\Beryllium\license.dat
+16:11:46 (lmgrd) lmgrd tcp-port 27500
+16:11:46 (lmgrd) (@lmgrd-SLOG@) ===============================================
+16:11:46 (lmgrd) (@lmgrd-SLOG@) === LMGRD ===
+16:11:46 (lmgrd) (@lmgrd-SLOG@) Start-Date: Sun Mar 08 2026 16:11:46 Romance Standard Time
+16:11:46 (lmgrd) (@lmgrd-SLOG@) PID: 31772
+16:11:46 (lmgrd) (@lmgrd-SLOG@) LMGRD Version: v11.19.6.0 build 293152 x64_n6 ( build 293152 (ipv6))
+16:11:46 (lmgrd) (@lmgrd-SLOG@) 
+16:11:46 (lmgrd) (@lmgrd-SLOG@) === Network Info ===
+16:11:46 (lmgrd) (@lmgrd-SLOG@) Listening port: 27500
+16:11:46 (lmgrd) (@lmgrd-SLOG@) 
+16:11:46 (lmgrd) (@lmgrd-SLOG@) === Startup Info ===
+16:11:46 (lmgrd) (@lmgrd-SLOG@) Is LS run as a service: Yes
+16:11:46 (lmgrd) (@lmgrd-SLOG@) Server Configuration: Single Server
+16:11:46 (lmgrd) (@lmgrd-SLOG@) Command-line options used at LS startup: -c C:\Program Files\MSC.Software\MSC Licensing\Beryllium\license.dat -l C:\MSC.Software\MSC Licensing\Beryllium\LOG\lmgrd.log -z -s 
+16:11:46 (lmgrd) (@lmgrd-SLOG@) License file(s) used:  C:\Program Files\MSC.Software\MSC Licensing\Beryllium\license.dat
+16:11:46 (lmgrd) (@lmgrd-SLOG@) ===============================================
+16:11:46 (lmgrd) SLOG: FNPLS-INTERNAL-VL1-40000
+16:11:46 (lmgrd) Starting vendor daemons ... 
+16:11:46 (lmgrd) Started MSC (pid 33872)
+16:11:46 (MSC) FlexNet Licensing version v11.19.6.0 build 293152 x64_n6
+16:11:46 (MSC) SLOG: Summary LOG statistics is enabled.
+16:11:46 (MSC) SLOG: FNPLS-INTERNAL-CKPT1
+16:11:46 (MSC) SLOG: VM Status: 0
+16:11:46 (MSC) SLOG: FNPLS-INTERNAL-CKPT5
+16:11:46 (MSC) SLOG: TPM Status: 0
+16:11:46 (MSC) SLOG: FNPLS-INTERNAL-CKPT6
+16:11:46 (MSC) Using options file: "C:\Program Files\MSC.Software\MSC Licensing\Helium\opt\options.opt"
+16:11:47 (MSC) Server started on pc_muc1 for:	MSCONE		
+16:11:47 (MSC) MSC_ID_1VAH9AT_CC96E5966F17 FFT_Actran_Acoustics FFT_Actran_AeroAcoustics 
+16:11:47 (MSC) FFT_Actran_DGM	FFT_Actran_GPU	FFT_Actran_Green 
+16:11:47 (MSC) FFT_Actran_Level3 FFT_Actran_Parallel FFT_Actran_PreProcess 
+16:11:47 (MSC) FFT_Actran_Python FFT_Actran_SEA	FFT_Actran_Sequential 
+16:11:47 (MSC) FFT_Actran_SNGR FFT_Actran_TM	FFT_Actran_TrimmedBody 
+16:11:47 (MSC) FFT_Actran_VA	FFT_Actran_VI	FFT_Actran_Workflow_Manager 
+16:11:47 (MSC) FFT_Actran_Radiosity ADAMS_3DRoad	ADAMS_Car_Plugin 
+16:11:47 (MSC) ADAMS_Car_Ride	ADAMS_Car_Ride_IDTool ADAMS_Car_Ride_Solver 
+16:11:47 (MSC) ADAMS_Car_Suspension ADAMS_Chassis	ADAMS_Chassis_Utilities 
+16:11:47 (MSC) ADAMS_Controls	ADAMS_Driveline ADAMS_Driveline_Solver 
+16:11:47 (MSC) ADAMS_Durability ADAMS_Exchange	ADAMS_FE_CoSim	
+16:11:47 (MSC) ADAMS_Flex	ADAMS_Foundation_Classes ADAMS_Geometry_Translators 
+16:11:47 (MSC) ADAMS_Insight	ADAMS_Linear	ADAMS_Machinery_Belt 
+16:11:47 (MSC) ADAMS_Machinery_Cable ADAMS_Machinery_Cam ADAMS_Machinery_Chain 
+16:11:47 (MSC) ADAMS_Machinery_Gear ADAMS_Machinery_Motor ADAMS_Machinery_Belt_GUI 
+16:11:47 (MSC) ADAMS_Machinery_Belt_Solver ADAMS_Machinery_Cable_GUI ADAMS_Machinery_Cable_Solver 
+16:11:47 (MSC) ADAMS_Machinery_Chain_GUI ADAMS_Machinery_Chain_Solver ADAMS_Machinery_Gear_GUI 
+16:11:47 (MSC) ADAMS_Machinery_Gear_Solver ADAMS_Mechatronics ADAMS_Modeler	
+16:11:47 (MSC) ADAMS_Modeler_FSR ADAMS_Nonlinear_Flex ADAMS_Postprocessor 
+16:11:47 (MSC) ADAMS_SmartDriver ADAMS_Solver	ADAMS_Solver_FixedStep 
+16:11:47 (MSC) ADAMS_Solver_RealTime_OS ADAMS_Solver_SMP ADAMS_TireHandling 
+16:11:47 (MSC) ADAMS_Vehicle_Solver ADAMS_Vibration ADAMS_Vibration_Solver 
+16:11:47 (MSC) ADAMS_View	ADAMS_ViewFlex	ADAMS_Visual_Edit 
+16:11:47 (MSC) TK_GearAT_BASE	TK_GearAT_BASE_PRE TK_GearAT_BASE_SOLVER 
+16:11:47 (MSC) TK_EM_AT_BASE	TK_EM_AT_SOLVER TK_EM_AT_PRE	
+16:11:47 (MSC) TK_BearingAT_BASE TK_BearingAT_BASE_PRE TK_BearingAT_BASE_SOLVER 
+16:11:47 (MSC) CAEfatigue_TIME CAEfatigue_FREQUENCY CAEfatigue_PREMIUM 
+16:11:47 (MSC) CAEfatigue_RANDOM EX_DIGIMAT_MF	EX_DIGIMAT_MAP	
+16:11:47 (MSC) DIGIMAT_ADVANCED_PREPOST DIGIMAT_ROM	EX_DIGIMAT_MX+	
+16:11:47 (MSC) EX_DIGIMAT_RP_GUI EX_DIGIMAT_FE_MODELER EX_DIGIMAT_FE_SOLVER 
+16:11:47 (MSC) EX_DIGIMAT_FE_SOLVER_TOKEN EX_DIGIMAT_VA_GUI EX_DIGIMAT_VA_SOLVER 
+16:11:47 (MSC) EX_DIGIMAT_CAE_STRUCTURAL EX_DIGIMAT_CAE_TOKEN EX_DIGIMAT_AM_GUI 
+16:11:47 (MSC) EX_DIGIMAT_AM_ADVANCED_SOLVER EX_DIGIMAT_FE_SOLVER_FFT EX_DIGIMAT_FE_SOLVER_GPU 
+16:11:47 (MSC) DYTRAN		EASY5_Analysis	EASY5_Gas_Dynamics 
+16:11:47 (MSC) EASY5_Hydraulic_Adv EASY5_Hydraulic_Basic EASY5_Library_Developer 
+16:11:47 (MSC) EASY5_MATLAB_Interface EASY5_Matrix_Algebra EASY5_Model_Building 
+16:11:47 (MSC) EASY5_Multiphase_Fluid EASY5_RT_Analysis EASY5_RT_Gas_Dynamics 
+16:11:47 (MSC) EASY5_RT_Hydraulic_Adv EASY5_RT_Hydraulic_Basic EASY5_RT_Library_Developer 
+16:11:47 (MSC) EASY5_RT_MATLAB_Interface EASY5_ES_Library EASY5_RT_Model_Building 
+16:11:47 (MSC) EASY5_RT_Multiphase_Fluid EMV_Client	EMV_Server	
+16:11:47 (MSC) FTI_FASTBLANK	FTI_FASTFORM_Adv FTI_Cost_Optimizer 
+16:11:47 (MSC) FTI_Cost_Optimizer_Adv FTI_Cost_Optimizer_Pro FTI_Incremental 
+16:11:47 (MSC) FTI_Incremental_Solver FTI_ACS		FTI_ACS_Pro	
+16:11:47 (MSC) MARC		MARC_Mesh2D	MARC_Mesh3D	
+16:11:47 (MSC) MARC_GPU	MARC_MatFit	MARC_PhaseTrans 
+16:11:47 (MSC) MARC_Parallel	MATC_Client_Development MATC_Client_Production 
+16:11:47 (MSC) MATC_Server_Development MATC_Server_Production MATC_User_Development 
+16:11:47 (MSC) MATC_User_Production Mentat		Mentat_CATIAV4_Access 
+16:11:47 (MSC) Mentat_CATIAV5_Access Mentat_CMOLD	Mentat_Creo_Access 
+16:11:47 (MSC) Mentat_Geometry_Translators Mentat_Inventor_Access Mentat_ITI_Access 
+16:11:47 (MSC) Mentat_JT_Access Mentat_NX_Access Mentat_Parasolid_Modeling 
+16:11:47 (MSC) Mentat_SolidWorks_Access MSC_Apex_CAD_Access_Pack MSC_Apex_Modeler 
+16:11:47 (MSC) MSC_Apex_Structures MSC_Apex_GenDes_Modeler MSC_Apex_GenDes_Engine 
+16:11:47 (MSC) MSC_Apex_GenDes_Engine_GPU CoSim_Marc_Interface MARC_CoSim_Adaptor 
+16:11:47 (MSC) CoSim_Adams_Interface ADAMS_CoSim_Adaptor CoSim_scFLOW_Interface 
+16:11:47 (MSC) SCFLOW_CoSim_Adaptor CoSim_MSCNastran_Interface NA_CoSim_Adaptor 
+16:11:47 (MSC) CoSim_PRE_Basic CoSim_PRE_Plus	MV_BUILDER	
+16:11:47 (MSC) MV_EVALUATOR	MV_MATERIALS_SELECTOR_DB NA_ACMS		
+16:11:47 (MSC) NA_Acoustics	NA_ADAMS_Integration NA_Adv_Nonlinear 
+16:11:47 (MSC) NA_Aero		NA_AVL_Excite_Interface NA_Connectors	
+16:11:47 (MSC) NA_DDAM		NA_Digimat	NA_Digimat_DMP	
+16:11:47 (MSC) NA_DMP		NA_Dynamics	NA_Explicit_Dytran 
+16:11:47 (MSC) NA_Exterior_Acoustics NA_GPU		NA_Krylov_Solver 
+16:11:47 (MSC) NA_Linear_Contact NA_MARC_Translator NA_Modules	
+16:11:47 (MSC) NA_DMAP		NA_MultiOpt	NA_Nonlinear	
+16:11:47 (MSC) NA_Optimization NA_Parallel	NA_PEM		
+16:11:47 (MSC) NA_Rotor_Dynamics NA_SMP		NA_Superelements 
+16:11:47 (MSC) NA_Thermal	NANL_Parallel	NANL_Solver	
+16:11:47 (MSC) NA_Coupled_Modes NA_Tire_Modeling NASTRAN		
+16:11:47 (MSC) MSCOneXT_CADLM_Quasar MSCOneXT_CADLM_Lunar MSCOneXT_CADLM_Nova 
+16:11:47 (MSC) ODYSSEE_AEYE	ODYSSEE_CAE	ODYSSEE_AEYE_GUI 
+16:11:47 (MSC) ODYSSEE_Solver	ODYSSEE_EXPLORE Mentat_ROM_Builder 
+16:11:47 (MSC) Marc_FMU_Runtime ODYSSEE_FMU_Builder ODYSSEE_FMU_Runtime 
+16:11:47 (MSC) PATRAN		PA_ACIS_SAT_Access PA_ANALYSIS_MANAGER 
+16:11:47 (MSC) PA_CATIAV4_Access PA_CATIAV5_Access PA_Creo_Access	
+16:11:47 (MSC) PA_DYTRAN	PA_ANSYS	PA_ABAQUS	
+16:11:47 (MSC) PA_LS_DYNA3D	PA_PAMCRASH	PA_Geometry_Translators 
+16:11:47 (MSC) PA_IDEAS_Access PA_MATERIALS	PA_Materials_Enterprise 
+16:11:47 (MSC) PA_NX_Access	PA_Parasolid_Modeling PA_PTHERMAL	
+16:11:47 (MSC) PA_QUEUE_MANAGER PA_RandomAnalysis_Tool PA_SolidWorks_Access 
+16:11:47 (MSC) PA_Adv_Surface_Mesh PA_MARC		PA_FLDS_BASIC	
+16:11:47 (MSC) RMX_Enduro	RMX_End_GearSplineContact RMX_End_SysContactAnalysis 
+16:11:47 (MSC) RMX_End_BevelGearDesign RMX_Spin	RMX_Spin_ThrustRoller 
+16:11:47 (MSC) RMX_Spin_ThrustBall RMX_Spin_DuplexBall RMX_Spin_SphericalRoller 
+16:11:47 (MSC) RMX_Spin_CrossRoller RMX_Spin_ThreePointBall RMX_Spin_AsymmetricBrg 
+16:11:47 (MSC) RMX_Spin_BearingDynamicsDT RMX_Spectrum	RMX_Spec_SystemGearTE 
+16:11:47 (MSC) RMX_Spec_EMachineNVH RMX_Spec_PlanetSideband RMX_Spec_AcousticsForActran 
+16:11:47 (MSC) RMX_Spec_NVHGearRattle RMX_Spec_DynSysExp RMX_DynamicFusion 
+16:11:47 (MSC) RMX_Energy	RMX_Ener_AdvancedEfficiency Romax_Concept	
+16:11:47 (MSC) RMX_Evolve	RMX_Evol_NVHAnalysis RMX_MD_FEModelling 
+16:11:47 (MSC) RMX_MD_BrgFlexRing RMX_MD_AdvJournalBrg RMX_PI_Variability 
+16:11:47 (MSC) RMX_PI_EMExcitationInterface RMX_PI_GearAnalysis RMX_PI_HGSim	
+16:11:47 (MSC) RMX_PI_XMLInterface RMX_PI_XMLResultsExport RMX_SC_ToroidalCVT 
+16:11:47 (MSC) RMX_SC_CycloidDrive RMX_DT		RMX_Wind_DT	
+16:11:47 (MSC) RMX_Aero_DT	RMX_Batch	SF_WELDING_GUI	
+16:11:47 (MSC) SF_WELDING_SOLVER SF_WELDING_NODE SF_WELDING_RSW_SOLVER 
+16:11:47 (MSC) SF_WELDING_DED_SOLVER SF_WELDING_ADVMATMOD_SOLVER SF_ADDITIVE_GUI 
+16:11:47 (MSC) SF_ADDITIVE_BINDJET_GUI SF_ADDITIVE_MACHINING_GUI SF_ADDITIVE_SOLVER 
+16:11:47 (MSC) SF_ADDITIVE_NODE SF_ADDITIVE_PDA_GUI SF_FORM_GUI	
+16:11:47 (MSC) SF_FORM_SOLVER	SF_FORM_NODE	SF_FORM_COGGING_SOLVER 
+16:11:47 (MSC) SF_FORM_DIELOAD_SOLVER SF_FORM_DIELIFE SF_FORM_PRESSUREW_SOLVER 
+16:11:47 (MSC) SF_FORM_JOINING_SOLVER SF_FORM_KINEMATICS_SOLVER SF_FORM_RINGROLLING_SOLVER 
+16:11:47 (MSC) SF_FORM_HT_SOLVER SF_FORM_SHEETMETAL_SOLVER SMGR_ACar_Portal_Development 
+16:11:47 (MSC) SMGR_ACar_Portal_Production SMGR_Client_Development SMGR_Client_Production 
+16:11:47 (MSC) SMGR_Server_Development SMGR_Server_Production SMGR_User_Development 
+16:11:47 (MSC) SMGR_User_Production SMGR_Concurrent_User SMGR_Named_User 
+16:11:47 (MSC) SCOTHER		SCTOTHER	SCTWPPJOB	
+16:11:47 (MSC) SCTWPPMPI	SCTMPIJOB	SCTSOLMPI	
+16:11:47 (MSC) SCTOTHERMPI	SCFLOWOTHER	SCFLOWPPJOB	
+16:11:47 (MSC) SCFLOWPPMPI	SCFLOWMPIJOB	SCFLOWSOLMPI	
+16:11:47 (MSC) SCFLOWOTHERMPI	SCFLOW_ULTD	STOTHER		
+16:11:47 (MSC) STWPPJOB	STWPPMPI	STMPIJOB	
+16:11:47 (MSC) STSOLMPI	STOTHERMPI	SCSTREAM_ULTD	
+16:11:47 (MSC) PCBCTOL		SCPOST		CRADLE_XR	
+16:11:47 (MSC) CRADLE_CFD_ULTD SCFAST_ULTD	CRADLE_CFD_PPJOB 
+16:11:47 (MSC) CRADLE_CFD_SOLJOB 
+16:11:47 (MSC) EXTERNAL FILTERS are OFF
+16:11:47 (MSC) FEATURE   MSCONE INACTIVITY TIMEOUT set to 300 seconds
+16:11:47 (lmgrd) MSC using TCP-port 51082
+16:11:47 (MSC) Changing message security level from -1 to 0
+16:11:47 (MSC) SLOG: Statistics Log Frequency is 240 minute(s).
+16:11:47 (MSC) SLOG: TS update poll interval is 600 seconds.
+16:11:47 (MSC) SLOG: Activation borrow reclaim percentage is 0.
+16:11:47 (MSC) (@MSC-SLOG@) ===============================================
+16:11:47 (MSC) (@MSC-SLOG@) === Vendor Daemon ===
+16:11:47 (MSC) (@MSC-SLOG@) Vendor daemon: MSC
+16:11:47 (MSC) (@MSC-SLOG@) Start-Date: Sun Mar 08 2026 16:11:47 Romance Standard Time
+16:11:47 (MSC) (@MSC-SLOG@) PID: 33872
+16:11:47 (MSC) (@MSC-SLOG@) VD Version: v11.19.6.0 build 293152 x64_n6 ( build 293152 (ipv6))
+16:11:47 (MSC) (@MSC-SLOG@) 
+16:11:47 (MSC) (@MSC-SLOG@) === Startup/Restart Info ===
+16:11:47 (MSC) (@MSC-SLOG@) Options file used: C:\Program Files\MSC.Software\MSC Licensing\Helium\opt\options.opt
+16:11:47 (MSC) (@MSC-SLOG@) Is vendor daemon a CVD: No
+16:11:47 (MSC) (@MSC-SLOG@) Is FlexNet Licensing Service installed and compatible: No
+16:11:47 (MSC) (@MSC-SLOG@) FlexNet Licensing Service Version: -NA-
+16:11:47 (MSC) (@MSC-SLOG@) Is TS accessed: No
+16:11:47 (MSC) (@MSC-SLOG@) TS access time: -NA-
+16:11:47 (MSC) (@MSC-SLOG@) Number of VD restarts since LS startup: 0
+16:11:47 (MSC) (@MSC-SLOG@) 
+16:11:47 (MSC) (@MSC-SLOG@) === Network Info ===
+16:11:47 (MSC) (@MSC-SLOG@) Listening port: 51082
+16:11:47 (MSC) (@MSC-SLOG@) Daemon select timeout (in seconds): 1
+16:11:47 (MSC) (@MSC-SLOG@) 
+16:11:47 (MSC) (@MSC-SLOG@) === Host Info ===
+16:11:47 (MSC) (@MSC-SLOG@) Host used in license file: pc_muc1
+16:11:47 (MSC) (@MSC-SLOG@) HostID node-locked in license file: cc96e5966f17 
+16:11:47 (MSC) (@MSC-SLOG@) HostID of the License Server: "0250f21e0a00 26cf20524153 245120524153 225b20524153 7604f10cf55d 7404f10cf55e cc96e5966f17 7404f10cf55d 0250f24002b7"
+16:11:47 (MSC) (@MSC-SLOG@) Running on Hypervisor: Not determined - treat as Physical
+16:11:47 (MSC) (@MSC-SLOG@) ===============================================
+16:11:47 (MSC) Ecomms: Encrypted Communication disabled
+16:12:08 (MSC)  INFO: Unable to connect to MSC compliance server, or invalid status 
+16:12:08 (MSC)  INFO: Compliance mode is set to OPEN for Beryllium
+16:12:08 (MSC)  Initialization
+16:12:08 (MSC)  (@MSC-INFO@) === Date ===
+16:12:08 (MSC)  (@MSC-INFO@) 2026-03-08
+16:12:08 (MSC)  (@MSC-INFO@)
+16:12:08 (MSC)  (@MSC-INFO@) === Component Versions ===
+16:12:08 (MSC)  (@MSC-INFO@) MSC created executables:
+16:12:08 (MSC)  (@MSC-INFO@)   1) MSC.exe vendor daemon (msc.exe):
+16:12:08 (MSC)  (@MSC-INFO@)        Flexera internal version =  11.19.6.0 x64_n6
+16:12:08 (MSC)  (@MSC-INFO@)        MSC internal version     =  Beryllium (Build 80971749)
+16:12:08 (MSC)  (@MSC-INFO@)   2) summarizer: Beryllium (Build 80971749) x64_n6
+16:12:08 (MSC)  (@MSC-INFO@)   3) uploader:   Beryllium (Build 80971749) x64_n6
+16:12:08 (MSC)  (@MSC-INFO@) Flexera created executables:
+16:12:08 (MSC)  (@MSC-INFO@)   1) lmgrd.exe:   11.19.6.0 x64_n6
+16:12:08 (MSC)  (@MSC-INFO@)   2) lmtools.exe: 11.19.6.0 x64_n6
+16:12:08 (MSC)  (@MSC-INFO@)   3) lmutil.exe:  11.19.6.0 x64_n6
+16:12:08 (MSC)  (@MSC-INFO@)
+16:12:08 (MSC)  (@MSC-INFO@) === Usage Reporting Tool Status ===
+16:12:08 (MSC)  (@MSC-INFO@) Usage Reporting Activated:      yes
+16:12:08 (MSC)  (@MSC-INFO@) Summarizer Activated:           yes
+16:12:08 (MSC)  (@MSC-INFO@) Uploader Activated:             yes
+16:12:08 (MSC)  (@MSC-INFO@) Usage Reporting Tool Log File:  C:\MSC.Software\MSC Licensing\Beryllium\LOG/mscusage.mpl
+16:12:08 (MSC)  (@MSC-INFO@)
+16:12:08 (MSC)  (@MSC-INFO@) === License File Information ===
+16:12:08 (MSC)  (@MSC-INFO@)   MSC License File Reference:
+16:12:08 (MSC)  (@MSC-INFO@)       9COT: Maint Date=2026-12-14; End Date=2026-12-14:
+16:12:08 (MSC)  (@MSC-INFO@)
+16:12:08 (MSC)  (@MSC-INFO@) === Token Pool Information ===
+16:12:08 (MSC)  (@MSC-INFO@) MSC One Tokens: Total = 150, Base = 150, Burst/Growth = 0
+16:12:08 (MSC)  (@MSC-INFO@)
+16:12:08 (MSC)  (@MSC-INFO@) Usage records are being written to: 16:12:08 (MSC) 
+ (@MSC-INFO@)    16:12:08 (MSC) C:\MSC.Software\MSC Licensing\Beryllium\LOG\mscusage_2026-03-08.ddu
+16:12:08 (MSC) TCP_NODELAY NOT enabled
+16:12:08 (MSC) Listener Thread: running
+16:12:16 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ODYSSEE_CAE] (60 licenses) 
+16:12:16 (MSC) Acquired 60 licenses for Group MSCONE (ODYSSEE CAE)
+16:13:35 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:13:35 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran)
+16:13:36 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NA_Adv_Nonlinear] (13 licenses) 
+16:13:36 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran Advanced Nonlinear)
+16:13:37 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:13:37 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NA_Adv_Nonlinear] (13 licenses) 
+16:13:38 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:13:38 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran)
+16:13:38 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:13:38 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran)
+16:13:38 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NA_Adv_Nonlinear] (13 licenses) 
+16:13:38 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran Advanced Nonlinear)
+16:13:39 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:13:39 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NA_Adv_Nonlinear] (13 licenses) 
+16:13:40 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:14:43 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:14:43 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran)
+16:14:45 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:15:44 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ADAMS_View] (5 licenses) 
+16:15:44 (MSC) Acquired 5 licenses for Group MSCONE (Adams View)
+16:15:46 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:MSC_Apex_Modeler] (15 licenses) 
+16:15:46 (MSC) Acquired 15 licenses for Group MSCONE (MSC Apex Modeler)
+16:15:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:17:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:18:50 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:MSC_Apex_Structures] (5 licenses) 
+16:19:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:21:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:23:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:25:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:27:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:29:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:31:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:33:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:35:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:37:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:39:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:41:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:42:49 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ADAMS_View] (5 licenses) 
+16:42:49 (MSC) Acquired 5 licenses for Group MSCONE (Adams View)
+16:42:58 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ADAMS_Car_Plugin] 
+16:42:58 (MSC) Acquired 1 license for Group MSCONE (Adams Car Plugin)
+16:42:59 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:42:59 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran)
+16:43:00 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NA_Adv_Nonlinear] (13 licenses) 
+16:43:00 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran Advanced Nonlinear)
+16:43:00 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:43:00 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NA_Adv_Nonlinear] (13 licenses) 
+16:43:02 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:43:02 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran)
+16:43:02 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NA_Adv_Nonlinear] (13 licenses) 
+16:43:02 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran Advanced Nonlinear)
+16:43:03 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+16:43:03 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NA_Adv_Nonlinear] (13 licenses) 
+16:43:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:44:05 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ODYSSEE_AEYE] (40 licenses) 
+16:44:05 (MSC) Acquired 40 licenses for Group MSCONE (ODYSSEE A-Eye)
+16:44:05 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ODYSSEE_AEYE] (40 licenses) 
+16:44:59 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ODYSSEE_AEYE] (40 licenses) 
+16:44:59 (MSC) Acquired 40 licenses for Group MSCONE (ODYSSEE A-Eye)
+16:44:59 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ODYSSEE_AEYE] (40 licenses) 
+16:45:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:47:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:49:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:50:00 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:MSC_Apex_Modeler] (15 licenses) 
+16:50:00 (MSC) Acquired 15 licenses for Group MSCONE (MSC Apex Modeler)
+16:50:00 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:51:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:52:00 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:52:58 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:MSC_Apex_Structures] (5 licenses) 
+16:53:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:54:00 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:55:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:56:00 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:57:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:58:00 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+16:59:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+17:00:00 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+17:00:49 (MSC) OUT: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+17:00:49 (MSC) Acquired 13 licenses for Group MSCONE (MSC Nastran)
+17:00:50 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:NASTRAN] (13 licenses) 
+17:01:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+17:02:00 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+17:03:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+17:04:00 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+17:05:46 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+17:06:00 (MSC) A,APP=SCASystem;connection_check,6c5e08c,cf3072ad
+17:07:23 (MSC) Wrong hostid on SERVER line for license file:
+17:07:23 (MSC) 	C:\Program Files\MSC.Software\MSC Licensing\Beryllium\license.dat
+17:07:23 (MSC) SERVER line says cc96e5966f17, hostid is "0250f21e0a00 26cf20524153 245120524153 225b20524153 7604f10cf55d 7404f10cf55e 0250f24002b7"
+17:07:23 (MSC) Invalid hostid on SERVER line
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_3DRoad(DAB62D5B4565)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Car_Plugin(02B83C44147A)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Car_Ride(95334C6E3413)
+17:07:23 (MSC) Disabling 150 licenses from feature ADAMS_Car_Ride_IDTool(648CB07F8AA4)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Car_Ride_Solver(D8B753818164)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Car_Suspension(5F822353C470)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Chassis(8C65936B6A15)
+17:07:23 (MSC) Disabling 150 licenses from feature ADAMS_Chassis_Utilities(F7363E509FF4)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Controls(79FDFBFF379C)
+17:07:23 (MSC) Disabling 150 licenses from feature ADAMS_CoSim_Adaptor(520DB3446514)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Driveline(702A02856ACD)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Driveline_Solver(64C3654505EF)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Durability(D8348830C40D)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Exchange(7A6C8957DA36)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_FE_CoSim(6D1633531983)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Flex(C9BF885205C4)
+17:07:23 (MSC) Disabling 150 licenses from feature ADAMS_Foundation_Classes(DF3356ABB4B6)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Geometry_Translators(A4027D4165EE)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Insight(AC30016EFBBB)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Linear(2C7CEEA43FE5)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Belt(F7A45A3A1460)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Belt_GUI(BFEC99D66A88)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Belt_Solver(2EBE99A3ADA5)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Cable(F791856D24C0)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Cable_GUI(E06DC345E61C)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Cable_Solver(FCFF2E6881A2)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Cam(A1E65DCFD624)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Chain(5FB528C3E0CF)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Chain_GUI(5D7D8FB03446)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Chain_Solver(0934310E39CA)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Gear(3B19DFED065C)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Gear_GUI(40A5E192C6FC)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Gear_Solver(E43BB4882AF2)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Machinery_Motor(B945088EF400)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Mechatronics(A20431A99A6D)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Modeler(E893452C6BB1)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Modeler_FSR(7A6EE14BAF77)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Nonlinear_Flex(CF28C478325C)
+17:07:23 (MSC) Disabling 150 licenses from feature ADAMS_Postprocessor(0897926C5443)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_SmartDriver(DB24A3CA080E)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Solver(240FBC7BFD87)
+17:07:23 (MSC) Disabling 150 licenses from feature ADAMS_Solver_FixedStep(9F5C1AC9ECD0)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Solver_RealTime_OS(9A23F408AA1D)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Solver_SMP(D11E953A0E47)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_TireHandling(2F9F3D41E2B4)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Vehicle_Solver(4153789DEA47)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Vibration(6535D090AB3A)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_Vibration_Solver(10AE8DE24BC6)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_View(8F9F6C6975D8)
+17:07:23 (MSC) Disabling 1 license from feature ADAMS_ViewFlex(C2D8C4B25E64)
+17:07:23 (MSC) Disabling 150 licenses from feature ADAMS_Visual_Edit(483CAB63FE3E)
+17:07:23 (MSC) Disabling 1 license from feature CAEfatigue_FREQUENCY(66B6B2A67FB8)
+17:07:23 (MSC) Disabling 1 license from feature CAEfatigue_PREMIUM(AC69789FE7D9)
+17:07:23 (MSC) Disabling 1 license from feature CAEfatigue_RANDOM(5777FD9BDC4D)
+17:07:23 (MSC) Disabling 1 license from feature CAEfatigue_TIME(7D1234585DCE)
+17:07:23 (MSC) Disabling 1 license from feature CoSim_Adams_Interface(56FFFE563C00)
+17:07:23 (MSC) Disabling 1 license from feature CoSim_Marc_Interface(9421F4221201)
+17:07:23 (MSC) Disabling 1 license from feature CoSim_MSCNastran_Interface(1466CAEEB83B)
+17:07:23 (MSC) Disabling 150 licenses from feature CoSim_PRE_Basic(2F714F5685C2)
+17:07:23 (MSC) Disabling 1 license from feature CoSim_PRE_Plus(81E3B496E3FA)
+17:07:23 (MSC) Disabling 1 license from feature CoSim_scFLOW_Interface(C3AF02BA253F)
+17:07:23 (MSC) Disabling 1 license from feature CRADLE_CFD_PPJOB(6BA448579863)
+17:07:23 (MSC) Disabling 1 license from feature CRADLE_CFD_SOLJOB(C20320A213D4)
+17:07:23 (MSC) Disabling 1 license from feature CRADLE_CFD_ULTD(2F4BBE6E1FCF)
+17:07:23 (MSC) Disabling 1 license from feature CRADLE_XR(353FA9D0EB25)
+17:07:23 (MSC) Disabling 1 license from feature DIGIMAT_ADVANCED_PREPOST(34960679346A)
+17:07:23 (MSC) Disabling 1 license from feature DIGIMAT_ROM(E31316D19111)
+17:07:23 (MSC) Disabling 1 license from feature DYTRAN(7EDF07A75394)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_Analysis(003800338D1E)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_ES_Library(B18F019C08BB)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_Gas_Dynamics(04AB59030431)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_Hydraulic_Adv(1535EDBA6259)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_Hydraulic_Basic(1D7F84A4145C)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_Library_Developer(B391FF1522C2)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_MATLAB_Interface(8A10ABAA9C74)
+17:07:23 (MSC) Disabling 150 licenses from feature EASY5_Matrix_Algebra(1E8188934365)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_Model_Building(834A691B2F36)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_Multiphase_Fluid(696981511868)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_RT_Analysis(F083D4DBC531)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_RT_Gas_Dynamics(C8C8B64316B1)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_RT_Hydraulic_Adv(12C0BC3F2C47)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_RT_Hydraulic_Basic(B526B66F62AA)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_RT_Library_Developer(F525BA5DFC37)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_RT_MATLAB_Interface(D1779D42404F)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_RT_Model_Building(FA4D419B2D96)
+17:07:23 (MSC) Disabling 1 license from feature EASY5_RT_Multiphase_Fluid(6B13BAD1823A)
+17:07:23 (MSC) Disabling 1 license from feature EMV_Client(18E55B0C6DF7)
+17:07:23 (MSC) Disabling 1 license from feature EMV_Server(1FB102E8B805)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_AM_ADVANCED_SOLVER(BBE44DE0B2A2)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_AM_GUI(3292C826F0A4)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_CAE_STRUCTURAL(1DF5ED295353)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_CAE_TOKEN(A3F524ABF4A9)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_FE_MODELER(EB0E23BB9CE7)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_FE_SOLVER(4A0018444B8E)
+17:07:23 (MSC) Disabling 150 licenses from feature EX_DIGIMAT_FE_SOLVER_FFT(6ACFCF15B03A)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_FE_SOLVER_GPU(E0F3A0D9BA21)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_FE_SOLVER_TOKEN(61D61D026FA7)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_MAP(00A0CABFA2E4)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_MF(029978825348)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_MX+(51995C300FE1)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_RP_GUI(A3D68EB9F980)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_VA_GUI(0BE4C2BAAC4D)
+17:07:23 (MSC) Disabling 1 license from feature EX_DIGIMAT_VA_SOLVER(28AE65C474A9)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_Acoustics(E780212CEF7A)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_AeroAcoustics(CDC83A167EC6)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_DGM(71C902314FA7)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_GPU(5845EA0317C0)
+17:07:23 (MSC) Disabling 150 licenses from feature FFT_Actran_Green(7408F2B65ECA)
+17:07:23 (MSC) Disabling 150 licenses from feature FFT_Actran_Level3(FBF2FFE04D53)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_Parallel(98BCB2FA80FE)
+17:07:23 (MSC) Disabling 150 licenses from feature FFT_Actran_PreProcess(0D1A3AAF947D)
+17:07:23 (MSC) Disabling 150 licenses from feature FFT_Actran_Python(CF5986AC78E9)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_Radiosity(4B53B1733593)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_SEA(5F2B387B8CB2)
+17:07:23 (MSC) Disabling 150 licenses from feature FFT_Actran_Sequential(0573960CBC71)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_SNGR(B56E54B8FAA8)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_TM(55357BD56EC5)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_TrimmedBody(5D44000FA135)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_VA(6B0AFB706CA7)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_VI(D357CEDFBDC6)
+17:07:23 (MSC) Disabling 1 license from feature FFT_Actran_Workflow_Manager(D62FF8715ED6)
+17:07:23 (MSC) Disabling 1 license from feature FTI_ACS(5BE82C13BF85)
+17:07:23 (MSC) Disabling 1 license from feature FTI_ACS_Pro(C7BA85444283)
+17:07:23 (MSC) Disabling 1 license from feature FTI_Cost_Optimizer(0880DD0585BD)
+17:07:23 (MSC) Disabling 1 license from feature FTI_Cost_Optimizer_Adv(070032E19142)
+17:07:23 (MSC) Disabling 1 license from feature FTI_Cost_Optimizer_Pro(426D2AA5354E)
+17:07:23 (MSC) Disabling 1 license from feature FTI_FASTBLANK(503BDDE7618B)
+17:07:23 (MSC) Disabling 1 license from feature FTI_FASTFORM_Adv(99C8908722C5)
+17:07:23 (MSC) Disabling 1 license from feature FTI_Incremental(313C5BC70C09)
+17:07:23 (MSC) Disabling 1 license from feature FTI_Incremental_Solver(EB474A9A498F)
+17:07:23 (MSC) Disabling 1 license from feature MARC(7D19B67B4AD7)
+17:07:23 (MSC) Disabling 150 licenses from feature MARC_CoSim_Adaptor(1D8B51B0AFFD)
+17:07:23 (MSC) Disabling 1 license from feature Marc_FMU_Runtime(B50182A4B3BA)
+17:07:23 (MSC) Disabling 1 license from feature MARC_GPU(4C6856A45075)
+17:07:23 (MSC) Disabling 150 licenses from feature MARC_MatFit(87F1F2A43444)
+17:07:23 (MSC) Disabling 150 licenses from feature MARC_Mesh2D(F16AD1635CE9)
+17:07:23 (MSC) Disabling 150 licenses from feature MARC_Mesh3D(7A87A74945B5)
+17:07:23 (MSC) Disabling 1 license from feature MARC_Parallel(31A788FF11FE)
+17:07:23 (MSC) Disabling 150 licenses from feature MARC_PhaseTrans(F28DDF2DD1B4)
+17:07:23 (MSC) Disabling 1 license from feature MATC_Client_Development(43FF3E4CA299)
+17:07:23 (MSC) Disabling 1 license from feature MATC_Client_Production(E606578F5E9C)
+17:07:23 (MSC) Disabling 1 license from feature MATC_Server_Development(E2D746014CFE)
+17:07:23 (MSC) Disabling 1 license from feature MATC_Server_Production(717CF8D4F325)
+17:07:23 (MSC) Disabling 20 licenses from feature MATC_User_Development(E2CF14DC3030)
+17:07:23 (MSC) Disabling 1 license from feature MATC_User_Production(6434B971F8A4)
+17:07:23 (MSC) Disabling 1 license from feature Mentat(A54949EB7495)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_CATIAV4_Access(6ABCF5051C32)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_CATIAV5_Access(0437843A0F4F)
+17:07:23 (MSC) Disabling 150 licenses from feature Mentat_CMOLD(B156DE9ECD60)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_Creo_Access(D69434C19B2C)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_Geometry_Translators(170B91849C41)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_Inventor_Access(D8A6F0C898C5)
+17:07:23 (MSC) Disabling 150 licenses from feature Mentat_ITI_Access(CD8B6D546852)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_JT_Access(3D5FE42D0400)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_NX_Access(C1946DF8A8C2)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_Parasolid_Modeling(7B077B2F2F11)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_ROM_Builder(2F00C7B7615E)
+17:07:23 (MSC) Disabling 1 license from feature Mentat_SolidWorks_Access(F2CC5F62EE2C)
+17:07:23 (MSC) Disabling 150 licenses from feature MSCONE(BE270EBCDB24)
+17:07:23 (MSC) Disabling 1 license from feature MSCOneXT_CADLM_Lunar(1DEE4F4BE898)
+17:07:23 (MSC) Disabling 1 license from feature MSCOneXT_CADLM_Nova(158AF471E124)
+17:07:23 (MSC) Disabling 1 license from feature MSCOneXT_CADLM_Quasar(48547BAC9AA8)
+17:07:23 (MSC) Disabling 150 licenses from feature MSC_Apex_CAD_Access_Pack(BFC991AB6E4E)
+17:07:23 (MSC) Disabling 1 license from feature MSC_Apex_GenDes_Engine(FC85DE712A6D)
+17:07:23 (MSC) Disabling 1 license from feature MSC_Apex_GenDes_Engine_GPU(45D08F5A9477)
+17:07:23 (MSC) Disabling 1 license from feature MSC_Apex_GenDes_Modeler(3D7DD2C8D7E9)
+17:07:23 (MSC) Disabling 1 license from feature MSC_Apex_Modeler(9F6E28016A3A)
+17:07:23 (MSC) Disabling 1 license from feature MSC_Apex_Structures(9A3771E353BB)
+17:07:23 (MSC) Disabling 1 license from feature MSC_ID_1VAH9AT_CC96E5966F17(934291D58F7F)
+17:07:23 (MSC) Disabling 1 license from feature MV_BUILDER(B55E6F73634E)
+17:07:23 (MSC) Disabling 1 license from feature MV_EVALUATOR(698DAE28A8DA)
+17:07:23 (MSC) Disabling 1 license from feature MV_MATERIALS_SELECTOR_DB(105589FC1F3C)
+17:07:23 (MSC) Disabling 1 license from feature NANL_Parallel(61338A3DB35C)
+17:07:23 (MSC) Disabling 1 license from feature NANL_Solver(D24ADF20CFE4)
+17:07:23 (MSC) Disabling 1 license from feature NASTRAN(9E2A49ED0FFC)
+17:07:23 (MSC) Disabling 1 license from feature NA_ACMS(B23B1336E899)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_Acoustics(48F9D819B5CB)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_ADAMS_Integration(2D60A7114AB6)
+17:07:23 (MSC) Disabling 1 license from feature NA_Adv_Nonlinear(F2B76B69EC1D)
+17:07:23 (MSC) Disabling 1 license from feature NA_Aero(8E4A9FE1E137)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_AVL_Excite_Interface(06EF4B752169)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_Connectors(E261475E23AB)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_CoSim_Adaptor(1F4B222E75DE)
+17:07:23 (MSC) Disabling 1 license from feature NA_Coupled_Modes(6A40264F9EDD)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_DDAM(E2E9300B5723)
+17:07:23 (MSC) Disabling 1 license from feature NA_Digimat(574F88088447)
+17:07:23 (MSC) Disabling 1 license from feature NA_Digimat_DMP(C1841D854CA9)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_DMAP(75AE0B7FE00B)
+17:07:23 (MSC) Disabling 1 license from feature NA_DMP(4A1032999D52)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_Dynamics(C3DD021364DD)
+17:07:23 (MSC) Disabling 1 license from feature NA_Explicit_Dytran(E7C278012956)
+17:07:23 (MSC) Disabling 1 license from feature NA_Exterior_Acoustics(FDC20A275F6C)
+17:07:23 (MSC) Disabling 1 license from feature NA_GPU(FB9BC15081A7)
+17:07:23 (MSC) Disabling 1 license from feature NA_Krylov_Solver(8F2D0E5A4EB6)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_Linear_Contact(523F34F5A9EF)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_MARC_Translator(3CC650E2ABCF)
+17:07:23 (MSC) Disabling 1 license from feature NA_Modules(C87187526E5D)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_MultiOpt(E894309DBC68)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_Nonlinear(6A8ACBB84601)
+17:07:23 (MSC) Disabling 1 license from feature NA_Optimization(BCCBB23FC206)
+17:07:23 (MSC) Disabling 1 license from feature NA_Parallel(86CA98F30F94)
+17:07:23 (MSC) Disabling 1 license from feature NA_PEM(6AD316B652E2)
+17:07:23 (MSC) Disabling 1 license from feature NA_Rotor_Dynamics(4023A2DDFDA5)
+17:07:23 (MSC) Disabling 1 license from feature NA_SMP(8E75B96B1F3A)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_Superelements(66BE6063614C)
+17:07:23 (MSC) Disabling 150 licenses from feature NA_Thermal(5AB75BD2D2A0)
+17:07:23 (MSC) Disabling 1 license from feature NA_Tire_Modeling(15F8E43807C6)
+17:07:23 (MSC) Disabling 1 license from feature ODYSSEE_AEYE(7F7215589891)
+17:07:23 (MSC) Disabling 1 license from feature ODYSSEE_AEYE_GUI(3C973059472C)
+17:07:23 (MSC) Disabling 1 license from feature ODYSSEE_CAE(57EDB518006A)
+17:07:23 (MSC) Disabling 1 license from feature ODYSSEE_EXPLORE(E28EE1CF3A90)
+17:07:23 (MSC) Disabling 1 license from feature ODYSSEE_FMU_Builder(DEB37E326818)
+17:07:23 (MSC) Disabling 1 license from feature ODYSSEE_FMU_Runtime(4D295D419F30)
+17:07:23 (MSC) Disabling 1 license from feature ODYSSEE_Solver(FAD99879B8DB)
+17:07:23 (MSC) Disabling 1 license from feature PATRAN(E5B863D811EA)
+17:07:23 (MSC) Disabling 150 licenses from feature PA_ABAQUS(97C8150DDB81)
+17:07:23 (MSC) Disabling 1 license from feature PA_ACIS_SAT_Access(0496B2C83657)
+17:07:23 (MSC) Disabling 150 licenses from feature PA_Adv_Surface_Mesh(39B28D5F1F0A)
+17:07:23 (MSC) Disabling 1 license from feature PA_ANALYSIS_MANAGER(58A0652BBCF0)
+17:07:23 (MSC) Disabling 150 licenses from feature PA_ANSYS(888A18486AA5)
+17:07:23 (MSC) Disabling 1 license from feature PA_CATIAV4_Access(AF638227C16A)
+17:07:23 (MSC) Disabling 1 license from feature PA_CATIAV5_Access(BDB1F28B5A04)
+17:07:23 (MSC) Disabling 1 license from feature PA_Creo_Access(6C6D8B530847)
+17:07:23 (MSC) Disabling 150 licenses from feature PA_DYTRAN(9C9A072981C7)
+17:07:23 (MSC) Disabling 1 license from feature PA_FLDS_BASIC(3691C75D7123)
+17:07:23 (MSC) Disabling 1 license from feature PA_Geometry_Translators(8161D5522002)
+17:07:23 (MSC) Disabling 1 license from feature PA_IDEAS_Access(4DFC1C9217E0)
+17:07:23 (MSC) Disabling 150 licenses from feature PA_LS_DYNA3D(3AF771FBF053)
+17:07:23 (MSC) Disabling 150 licenses from feature PA_MARC(8E6BB02294EC)
+17:07:23 (MSC) Disabling 1 license from feature PA_MATERIALS(674F54F2F5B3)
+17:07:23 (MSC) Disabling 1 license from feature PA_Materials_Enterprise(FDB334A59B70)
+17:07:23 (MSC) Disabling 1 license from feature PA_NX_Access(D1A5B9CFAD80)
+17:07:23 (MSC) Disabling 150 licenses from feature PA_PAMCRASH(84A8B9001A19)
+17:07:23 (MSC) Disabling 1 license from feature PA_Parasolid_Modeling(A2CDB328FD10)
+17:07:23 (MSC) Disabling 1 license from feature PA_PTHERMAL(2EA9A6FBAA14)
+17:07:23 (MSC) Disabling 1 license from feature PA_QUEUE_MANAGER(CA7A28DF7E8C)
+17:07:23 (MSC) Disabling 150 licenses from feature PA_RandomAnalysis_Tool(377D4635AA6F)
+17:07:23 (MSC) Disabling 1 license from feature PA_SolidWorks_Access(F84C698C30E4)
+17:07:23 (MSC) Disabling 1 license from feature PCBCTOL(C5880CE73831)
+17:07:23 (MSC) Disabling 150 licenses from feature RMX_Aero_DT(37E7C02E2FB3)
+17:07:23 (MSC) Disabling 150 licenses from feature RMX_Batch(BDC628FD5368)
+17:07:23 (MSC) Disabling 150 licenses from feature RMX_DT(B2FA4F99A774)
+17:07:23 (MSC) Disabling 1 license from feature RMX_DynamicFusion(EB81B129D405)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Enduro(3BBB918F23B1)
+17:07:23 (MSC) Disabling 1 license from feature RMX_End_BevelGearDesign(E3B76D50BF59)
+17:07:23 (MSC) Disabling 1 license from feature RMX_End_GearSplineContact(407A72710A7A)
+17:07:23 (MSC) Disabling 1 license from feature RMX_End_SysContactAnalysis(CCDB6B350A21)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Energy(53436C61C245)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Ener_AdvancedEfficiency(654797750B3A)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Evolve(568F40FDA220)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Evol_NVHAnalysis(4A92DE62DE32)
+17:07:23 (MSC) Disabling 1 license from feature RMX_MD_AdvJournalBrg(003D60897668)
+17:07:23 (MSC) Disabling 1 license from feature RMX_MD_BrgFlexRing(FFD48400F005)
+17:07:23 (MSC) Disabling 1 license from feature RMX_MD_FEModelling(2C7EDF81A878)
+17:07:23 (MSC) Disabling 1 license from feature RMX_PI_EMExcitationInterface(CC57B8C4DAED)
+17:07:23 (MSC) Disabling 1 license from feature RMX_PI_GearAnalysis(AE24427AD2BA)
+17:07:23 (MSC) Disabling 1 license from feature RMX_PI_HGSim(3499E5FCFE65)
+17:07:23 (MSC) Disabling 1 license from feature RMX_PI_Variability(D20207069185)
+17:07:23 (MSC) Disabling 1 license from feature RMX_PI_XMLInterface(742E9977D500)
+17:07:23 (MSC) Disabling 1 license from feature RMX_PI_XMLResultsExport(03F5BBC33FC6)
+17:07:23 (MSC) Disabling 1 license from feature RMX_SC_CycloidDrive(8E021D109234)
+17:07:23 (MSC) Disabling 1 license from feature RMX_SC_ToroidalCVT(499A10F79B46)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spectrum(80AA99A52683)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spec_AcousticsForActran(FA2BB66B3F0A)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spec_DynSysExp(9FEA9798AED1)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spec_EMachineNVH(3E4E10CC5F14)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spec_NVHGearRattle(A2766CE204FC)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spec_PlanetSideband(4E98A3FEC2A2)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spec_SystemGearTE(4F1102BEBF2D)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spin(0397FC68BB78)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spin_AsymmetricBrg(CDDA19A3600B)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spin_BearingDynamicsDT(BBD08FF4FDF8)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spin_CrossRoller(603A25BF69BC)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spin_DuplexBall(FC684583FB09)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spin_SphericalRoller(8880FEAEB1FE)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spin_ThreePointBall(ECAFF7CBC483)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spin_ThrustBall(FCC84FB30286)
+17:07:23 (MSC) Disabling 1 license from feature RMX_Spin_ThrustRoller(407699F289FC)
+17:07:23 (MSC) Disabling 150 licenses from feature RMX_Wind_DT(588BA32C66BB)
+17:07:23 (MSC) Disabling 1 license from feature Romax_Concept(05F01CDCF2AB)
+17:07:23 (MSC) Disabling 1 license from feature SCFAST_ULTD(8B926F880A85)
+17:07:23 (MSC) Disabling 1 license from feature SCFLOWMPIJOB(B700CFAF2933)
+17:07:23 (MSC) Disabling 150 licenses from feature SCFLOWOTHER(2E94817A572E)
+17:07:23 (MSC) Disabling 150 licenses from feature SCFLOWOTHERMPI(A9485434193A)
+17:07:23 (MSC) Disabling 1 license from feature SCFLOWPPJOB(592033940D3A)
+17:07:23 (MSC) Disabling 1 license from feature SCFLOWPPMPI(702026D0E1D7)
+17:07:23 (MSC) Disabling 1 license from feature SCFLOWSOLMPI(82E4868A6248)
+17:07:23 (MSC) Disabling 150 licenses from feature SCFLOW_CoSim_Adaptor(010349AE4C22)
+17:07:23 (MSC) Disabling 1 license from feature SCFLOW_ULTD(9C9E8E6A1953)
+17:07:23 (MSC) Disabling 150 licenses from feature SCOTHER(F5B0F8D24AD4)
+17:07:23 (MSC) Disabling 1 license from feature SCPOST(FC7541270670)
+17:07:23 (MSC) Disabling 1 license from feature SCSTREAM_ULTD(A54E5300A1DF)
+17:07:23 (MSC) Disabling 1 license from feature SCTMPIJOB(30D181406BBF)
+17:07:23 (MSC) Disabling 150 licenses from feature SCTOTHER(01D666A6AAC4)
+17:07:23 (MSC) Disabling 150 licenses from feature SCTOTHERMPI(B5A1A2791692)
+17:07:23 (MSC) Disabling 1 license from feature SCTSOLMPI(30A91A486501)
+17:07:23 (MSC) Disabling 1 license from feature SCTWPPJOB(97EA2E2CC199)
+17:07:23 (MSC) Disabling 1 license from feature SCTWPPMPI(48CD446C2ADF)
+17:07:23 (MSC) Disabling 1 license from feature SF_ADDITIVE_BINDJET_GUI(1D514413C47C)
+17:07:23 (MSC) Disabling 1 license from feature SF_ADDITIVE_GUI(77D920A3E964)
+17:07:23 (MSC) Disabling 1 license from feature SF_ADDITIVE_MACHINING_GUI(037CBB241086)
+17:07:23 (MSC) Disabling 1 license from feature SF_ADDITIVE_NODE(D8DAEA92875C)
+17:07:23 (MSC) Disabling 1 license from feature SF_ADDITIVE_PDA_GUI(FF9482C4C17B)
+17:07:23 (MSC) Disabling 1 license from feature SF_ADDITIVE_SOLVER(1E2879EB38ED)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_COGGING_SOLVER(591695C0F9EC)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_DIELIFE(3C6E921D71A5)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_DIELOAD_SOLVER(DE32715A750F)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_GUI(8BA8B5014A26)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_HT_SOLVER(2DBFA28AD078)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_JOINING_SOLVER(E023D77341D2)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_KINEMATICS_SOLVER(0F086E5DC1E7)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_NODE(BFF4EAC213ED)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_PRESSUREW_SOLVER(014FE29ADE66)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_RINGROLLING_SOLVER(4502DA40A657)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_SHEETMETAL_SOLVER(56922CA79594)
+17:07:23 (MSC) Disabling 1 license from feature SF_FORM_SOLVER(672710EE7300)
+17:07:23 (MSC) Disabling 1 license from feature SF_WELDING_ADVMATMOD_SOLVER(83113E91950C)
+17:07:23 (MSC) Disabling 1 license from feature SF_WELDING_DED_SOLVER(4CB118F9903A)
+17:07:23 (MSC) Disabling 1 license from feature SF_WELDING_GUI(A2ABDE3C9101)
+17:07:23 (MSC) Disabling 1 license from feature SF_WELDING_NODE(F0094EA93388)
+17:07:23 (MSC) Disabling 1 license from feature SF_WELDING_RSW_SOLVER(471EC1B5D8E4)
+17:07:23 (MSC) Disabling 1 license from feature SF_WELDING_SOLVER(1D4E2D5D7B30)
+17:07:23 (MSC) Disabling 1 license from feature SMGR_ACar_Portal_Development(D5F8F283F705)
+17:07:23 (MSC) Disabling 1 license from feature SMGR_ACar_Portal_Production(92997015D01E)
+17:07:23 (MSC) Disabling 1 license from feature SMGR_Client_Development(31095E19AB84)
+17:07:23 (MSC) Disabling 1 license from feature SMGR_Client_Production(BFB4F844CAC1)
+17:07:23 (MSC) Disabling 1 license from feature SMGR_Concurrent_User(E428EA957FC2)
+17:07:23 (MSC) Disabling 1 license from feature SMGR_Named_User(24A1D0FE7637)
+17:07:23 (MSC) Disabling 1 license from feature SMGR_Server_Development(6AC8F79A534A)
+17:07:23 (MSC) Disabling 1 license from feature SMGR_Server_Production(6612E05C54A1)
+17:07:23 (MSC) Disabling 25 licenses from feature SMGR_User_Development(56EEC52DF0BD)
+17:07:23 (MSC) Disabling 1 license from feature SMGR_User_Production(179DFEA818C6)
+17:07:23 (MSC) Disabling 1 license from feature STMPIJOB(1C1851B24E68)
+17:07:23 (MSC) Disabling 150 licenses from feature STOTHER(DC068FADC826)
+17:07:23 (MSC) Disabling 150 licenses from feature STOTHERMPI(3EF25F768041)
+17:07:23 (MSC) Disabling 1 license from feature STSOLMPI(E8B2F4C5D1A1)
+17:07:23 (MSC) Disabling 1 license from feature STWPPJOB(A88097A0DDDE)
+17:07:23 (MSC) Disabling 1 license from feature STWPPMPI(D59CE538DD9B)
+17:07:23 (MSC) Disabling 150 licenses from feature TK_BearingAT_BASE(95226F4FB573)
+17:07:23 (MSC) Disabling 150 licenses from feature TK_BearingAT_BASE_PRE(7C3CEC0AB265)
+17:07:23 (MSC) Disabling 1 license from feature TK_BearingAT_BASE_SOLVER(9505F483AAB0)
+17:07:23 (MSC) Disabling 1 license from feature TK_EM_AT_BASE(0DF5B181C360)
+17:07:23 (MSC) Disabling 1 license from feature TK_EM_AT_PRE(DD26D1CF9987)
+17:07:23 (MSC) Disabling 1 license from feature TK_EM_AT_SOLVER(76E2796BF872)
+17:07:23 (MSC) Disabling 150 licenses from feature TK_GearAT_BASE(C2452E4FDE9F)
+17:07:23 (MSC) Disabling 150 licenses from feature TK_GearAT_BASE_PRE(654B68EFD4CD)
+17:07:23 (MSC) Disabling 1 license from feature TK_GearAT_BASE_SOLVER(D6961A3F66FF)
+17:09:27 (MSC) No valid hostids, exiting
+17:09:27 (MSC) EXITING DUE TO SIGNAL 25 Exit reason 2
+17:09:27 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ODYSSEE_CAE] (60 licenses) (SHUTDOWN)
+17:09:27 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ADAMS_View] (5 licenses) (SHUTDOWN)
+17:09:27 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:MSC_Apex_Modeler] (15 licenses) (SHUTDOWN)
+17:09:27 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:MSC_Apex_Structures] (5 licenses) (SHUTDOWN)
+17:09:27 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ADAMS_View] (5 licenses) (SHUTDOWN)
+17:09:27 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:ADAMS_Car_Plugin] (SHUTDOWN)
+17:09:27 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:MSC_Apex_Modeler] (15 licenses) (SHUTDOWN)
+17:09:27 (MSC) IN: "MSCONE" cornelia.thieme@pc_muc1  [MSCONE:MSC_Apex_Structures] (5 licenses) (SHUTDOWN)
+17:09:32 (lmgrd) MSC exited with status 25 (Invalid host)
+17:09:32 (lmgrd) Please correct problem and restart daemons

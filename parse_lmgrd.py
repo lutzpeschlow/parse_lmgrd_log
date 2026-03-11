@@ -1,4 +1,4 @@
-import os, sys, string, re, csv, argparse
+import os, sys, string, re, csv, argparse, socket
 from datetime import datetime, timedelta, time
 from typing import List
 from collections import defaultdict
@@ -558,11 +558,18 @@ def main():
     print (sys.version)
     print(os.getcwd())
     print(sys.argv)
+    # vsc simple test
+    if socket.gethostname() == "DESKTOP-TGFNK0H" and len(sys.argv)==1:
+        sys.argv.extend(["--input","lmgrd_dewet_anonym.log"])
+    # arg handling
     log_file, csv_dot = process_arguments(sys.argv)
     # (0) instance of object
     t = Tokens(log_file, csv_dot)
     # (1) read and process data
-    t.read_lmgrd_file()
+    num_checks, num_starts = t.read_lmgrd_file()
+    if num_checks == 0:
+        print ("\nWARNING: no license checkouts (OUT: and IN:) are found in file ...\n")
+        return 1
     t.process_data()
     # (2) post processing
     t.post_data()
