@@ -340,9 +340,10 @@ class Tokens():
             # feature token-minutes
             writer.writerow(["feature", "token_min", "percentage"])
             for data in feat_tok_min_perc:
+                feat_string = str(data[0]).replace(" ","").replace(",",":")
                 wert_min = f"{data[1]:.2f}".replace(".", decimal)
                 wert_pct = f"{data[2]:.1f}%".replace(".", decimal)
-                writer.writerow([data[0], wert_min, wert_pct])
+                writer.writerow([feat_string, wert_min, wert_pct])
         # return value
         return 0
 
